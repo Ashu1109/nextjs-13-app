@@ -1,7 +1,7 @@
 import mongoose from "mongoose"
 import { serialize } from "cookie";
 import jwt from 'jsonwebtoken'
-import { User } from "../../todo/models/User";
+import { User } from "../models/User";
 export const connectDB = async () =>{
     const { connection }=await mongoose.connect(process.env.MONGO_URL,{
             useNewUrlParser: true,
