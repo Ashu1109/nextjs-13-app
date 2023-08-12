@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, createContext, useContext,useEffect } from "react"
 import {Toaster,toast} from "react-hot-toast";
 import { useRouter } from "next/navigation";
+import '../styles/mediaquery.scss'
 
 export const Context = createContext({ user: {} });
 export const ContextProvider = ({ children }) => {
@@ -59,7 +60,7 @@ export const LogoutBtn = () => {
     return (
       <>
       {
-        user._id?<button className="btn" onClick={logoutHandler}>Logout</button>:<Link href={"/login"}>Login</Link>
+        user._id?<button  className="btn media" onClick={logoutHandler}>Logout</button>:<Link className='media' href={"/login"}>Login</Link>
       }
       </>
     )
@@ -103,7 +104,7 @@ export const TodoButton = ({id,completed}) =>{
   return (
   <>
   <input type="checkbox" onChange={()=>{updateHandler(id)}} checked={completed}/>
-  <button className="btn" onClick={()=>{deleteHandler(id)}}>Delete</button>
+  <button className="btn delete" onClick={()=>{deleteHandler(id)}}>Delete</button>
   </>
   )
 }

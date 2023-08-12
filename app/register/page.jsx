@@ -42,8 +42,8 @@ if(user._id){return redirect('/')}
         <section>
             <form onSubmit={registerHandler}>
                 <input onChange={(e)=>{setName(e.target.value)}} value={name} type="Text" placeholder='Enter Name' />
-                <input onChange={(e)=>{setEmail(e.target.value)}} value={email} type="email" placeholder='Enter Email' />
-                <input onChange={(e)=>{setPassword(e.target.value)}} value={password} type="password" placeholder='Enter Password' />
+                <input onChange={(e)=>{setEmail(e.target.value)}} value={email} type="email" placeholder='Enter Any Sample Email' />
+                <input onChange={(e)=>{setPassword(e.target.value)}} value={password} type="password" placeholder='Enter Any Sample Password' />
                 <button type="submit">SignUp</button>
                 <Link href={"/login"}>Log In?</Link>
             </form>

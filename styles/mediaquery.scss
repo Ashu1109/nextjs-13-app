@@ -1,5 +1,81 @@
+$color1: rgb(49, 211, 81);
+$color2: rgb(255, 255, 255);
+$color3: rgb(51, 51, 51);
+$color4: #e7e7e7;
+
+$text1: "Quicksand", sans-serif;
+$shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
 @media (max-width: 900px) {
     .login {
       padding: 0;
+    }
+    article{
+      height: 8vh;
+      .media{
+        display: none;
+      }
+    }
+    .delete{
+      font-size: 1rem;
+      padding: 8px;
+    }
+  }
+  .active{
+    width: 100vw;
+    height: 20vh;
+    article{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      margin-top: 2rem;
+      .media{
+        display: block;
+      }
+    }
+    .todonav{
+      position: absolute;
+      top: 1rem;
+      left: 2rem;
+    }
+    .burger{
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+    }
+  }
+
+
+
+
+
+  .Profile{
+    width: 100vw; 
+    height: 92vh;
+    background: $color2;
+    display: flex;
+    justify-content: center;
+    .ProfileInfo{
+      width: 60vw;
+      height: 15vh;
+      background-color: $color4;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top:10rem;
+    border-radius: 20px;
+    box-shadow: $shadow;
+    h1{
+      margin: 8px;
+    }
     }
   }
