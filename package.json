@@ -19,7 +19,6 @@
     "react-burger-menu": "^3.0.9",
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.4.1",
-    "react-icon": "^1.0.0",
     "sass": "^1.64.2"
   }
 }
